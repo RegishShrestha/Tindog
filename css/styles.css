@@ -80,7 +80,7 @@ body {
 /* Testomonial */
 #testimonials {
   text-align: center;
-  padding: 7% 10%;
+
   color: #fff;
   background-color: #ef8172;
 }
@@ -90,7 +90,9 @@ body {
   border-radius: 100%;
   margin: 20px;
 }
-
+.carousel-item {
+  padding: 7% 10%;
+}
 #press {
   background-color: #ef8172;
   text-align: center;
