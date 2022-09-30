@@ -18,9 +18,12 @@ body {
   color: #fff;
   background-color: #ff4c68;
 }
+#title img {
+  width: 300px;
+}
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navbar */
@@ -54,13 +57,17 @@ body {
 
 .title-image {
   width: 60%;
-  transform: rotate(45deg);
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* feature */
 
 #features {
   padding: 7% 10%;
+  position: relative;
+  background-color: #fff;
 }
 
 .feature-box {
@@ -112,4 +119,31 @@ body {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  #title img {
+    width: 60%;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+  #features {
+    position: static;
+  }
+}
+
+/* Call in Action */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+}
+
+#cta h3 {
+  font-family: "Montserrat-Black", sans-serif;
+  color: #fff;
 }
