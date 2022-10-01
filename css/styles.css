@@ -1,29 +1,33 @@
-h1 {
+body {
   font-family: "Montserrat-Black", sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
+  text-align: center;
 }
-
-h3 {
-  font-family: "Montserrat-Bold";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Black", sans-serif;
 }
 p {
   color: #8f8f8f;
 }
-body {
-  font-family: "Montserrat-Black", sans-serif;
+
+/* Headings */
+.big-headings {
+  font-size: 3.5rem;
+  line-height: 1.5;
 }
 
-#title {
-  color: #fff;
-  background-color: #ff4c68;
-}
-#title img {
-  width: 300px;
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
+/* Containers */
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
 /* Navbar */
@@ -55,6 +59,19 @@ body {
 
 /* Title Image */
 
+#title {
+  color: #fff;
+  background-color: #ff4c68;
+  text-align: left;
+}
+#title img {
+  width: 300px;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 .title-image {
   width: 60%;
   transform: rotate(25deg);
@@ -70,8 +87,10 @@ body {
   background-color: #fff;
 }
 
+.feature-heading {
+  font-size: 1.5rem;
+}
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 
@@ -86,10 +105,12 @@ body {
 
 /* Testomonial */
 #testimonials {
-  text-align: center;
-
   color: #fff;
   background-color: #ef8172;
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonials-img {
@@ -102,7 +123,7 @@ body {
 }
 #press {
   background-color: #ef8172;
-  text-align: center;
+
   padding-bottom: 3%;
 }
 
@@ -114,11 +135,26 @@ body {
 /* Pricing */
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* Call in Action */
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+/* footer */
+
+.social-icon {
+  margin: 20px 10px;
 }
 
 @media (max-width: 1028px) {
@@ -135,15 +171,4 @@ body {
   #features {
     position: static;
   }
-}
-
-/* Call in Action */
-#cta {
-  background-color: #ff4c68;
-  text-align: center;
-}
-
-#cta h3 {
-  font-family: "Montserrat-Black", sans-serif;
-  color: #fff;
 }
